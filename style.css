@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* overflow-y: hidden;  */
+
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 480px;
+    background: #fdfdfd;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15),
+        -5px -5px 15px rgba(255, 255, 255, 0.9);
+    animation: slideUp 0.8s ease;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: #f5f5f5;
+    box-shadow: inset 4px 4px 8px #d1d1d1,
+        inset -4px -4px 8px #ffffff;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    background: #fff;
+    box-shadow: 0 0 8px #f6d365;
+    transform: scale(1.02);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2),
+        -3px -3px 7px rgba(255, 255, 255, 0.9);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25),
+        -3px -3px 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Output box */
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    max-height: 220px;
+    overflow-y: auto;
+    box-shadow: inset 3px 3px 8px #d1d1d1,
+    inset -3px -3px 8px #ffffff;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
