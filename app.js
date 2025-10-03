@@ -7,14 +7,16 @@ stdInfo.addEventListener('submit', (e) => {
     let age = document.getElementById('age').value;
     let id = document.getElementById('id').value;
     let AdmissionDate = document.getElementById('Date').value;
+    let time = document.getElementById('timing').value;
     let Batch = document.getElementById('Batch').value;
 
-    if(name && age && id && AdmissionDate && Batch){
+    if(name && age && id && AdmissionDate && time && Batch){
         const student = {
             name ,
             age ,
             id ,
             AdmissionDate ,
+            time ,
             Batch
         };
         students.push(student);
